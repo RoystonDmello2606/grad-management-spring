@@ -22,7 +22,7 @@ public class Grad {
 	
 	public Grad(@NotNull String employeeCode, @NotNull String name, @NotNull String email, @NotNull String college,
 			@NotNull String location, @NotNull String dateOfJoiningReconfirmation,@NotNull String course, @NotNull String branch, @NotNull Float cgpa,
-			@NotNull Integer personalNumber, @NotNull String personalEmail, @NotNull Date dob,
+			@NotNull String personalNumber, @NotNull String personalEmail, @NotNull Date dob,
 			@NotNull String currentPlace, @NotNull String cvLink) {
 		super();
 		this.employeeCode = employeeCode;
@@ -77,7 +77,7 @@ public class Grad {
 	
 	@NotNull 
 	@Column(name="personal_contact_number")
-	private Integer personalNumber;
+	private String personalNumber;
 	
 	@NotNull
 	@Column(name="personal_email_id")
@@ -93,7 +93,7 @@ public class Grad {
 	private @NotNull String currentPlace;
 	
 	@Column(name="parent_contact_number")
-	private Integer parentContact;
+	private String parentContact;
 	
 	@Column(name="parent_postal_address")
 	private String parentAddress;
@@ -237,11 +237,11 @@ public class Grad {
 		this.cgpa = cgpa;
 	}
 
-	public Integer getPersonalNumber() {
+	public String getPersonalNumber() {
 		return personalNumber;
 	}
 
-	public void setPersonalNumber(Integer personalNumber) {
+	public void setPersonalNumber(String personalNumber) {
 		this.personalNumber = personalNumber;
 	}
 
@@ -277,11 +277,11 @@ public class Grad {
 		this.currentPlace = currentPlace;
 	}
 
-	public Integer getParentContact() {
+	public String getParentContact() {
 		return parentContact;
 	}
 
-	public void setParentContact(Integer parentContact) {
+	public void setParentContact(String parentContact) {
 		this.parentContact = parentContact;
 	}
 
